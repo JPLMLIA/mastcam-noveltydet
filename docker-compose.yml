@@ -1,0 +1,11 @@
+version:  '3'
+services:
+  novelty-lab:
+      build:    ./novelty_docker
+      volumes:
+        - ${LOCAL_WORKING_DIR}:/home/jovyan/work
+      ports:
+        - ${PORT}:8888
+      container_name:   novelty-lab
+      command: "/usr/local/bin/start.sh jupyter lab \
+        --NotebookApp.password=${ACCESS_TOKEN}"

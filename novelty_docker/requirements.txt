@@ -1,0 +1,7 @@
+numpy
+matplotlib
+sklearn
+spectral
+scikit-image
+scipy
+tensorflow
